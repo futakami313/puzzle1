@@ -3,9 +3,12 @@
 body {
   margin: 0;
 }
-.flex {
-  display: flex;
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
+
 .red-box {
   width: 400px;
   height: 100px;
@@ -15,11 +18,13 @@ body {
   width: 150px;
   height: 250px;
   background: #00ff1e;
+  float: left;
 }
 .blue-box {
   width: 250px;
   height: 250px;
   background: #3300ff;
+  float: left;
 }
 .yellow-box {
   width: 400px;
